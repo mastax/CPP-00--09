@@ -11,23 +11,23 @@ contacts	phonebook::getter_contact(int i) {
 	return (contact[i]);
 }
 
-void		phonebook::contact_setf(st fn, int i) {
+void		phonebook::contact_setf(std::string fn, int i) {
 	contact[i].setterFname(fn);
 }
-void		phonebook::contact_setl(st ln, int i) {
+void		phonebook::contact_setl(std::string ln, int i) {
 	contact[i].setterSname(ln);
 }
-void		phonebook::contact_setn(st nn, int i) {
+void		phonebook::contact_setn(std::string nn, int i) {
 	contact[i].setterNname(nn);
 }
-void		phonebook::contact_setp(st pn, int i) {
+void		phonebook::contact_setp(std::string pn, int i) {
 	contact[i].setterPnumber(pn);
 }
-void		phonebook::contact_setd(st ds, int i) {
+void		phonebook::contact_setd(std::string ds, int i) {
 	contact[i].setterDsecret(ds);
 }
 
-int	checkall(st fname, st sname, st nname, st pnumber, st dsecret) {
+int	checkall(std::string fname, std::string sname, std::string nname, std::string pnumber, std::string dsecret) {
 	for (int index = 0; pnumber[index];) {
 		if (isdigit(pnumber[index]))
 			index++;
@@ -63,11 +63,11 @@ int	checkall(st fname, st sname, st nname, st pnumber, st dsecret) {
 
 int		add_contact(phonebook *div, int i)
 {
-	st dsecret;
-	st	fname;
-	st	sname;
-	st	nname;
-	st	pnumber;
+	std::string dsecret;
+	std::string	fname;
+	std::string	sname;
+	std::string	nname;
+	std::string	pnumber;
 
 	std::cout << "First Name : ";
 	if (!std::getline(std::cin, fname))
@@ -101,7 +101,7 @@ int		add_contact(phonebook *div, int i)
 
 void	search_contact(phonebook *div)
 {
-	st	al;
+	std::string	al;
 
 	std::cout << YELLOW "|" << std::setw(10) << "Index"
 	<< "|" << std::setw(10) << "FirstName"

@@ -4,7 +4,7 @@ int main()
 {
 	int			i;
 	phonebook	div;
-	st	input;
+	std::string	input;
 
 	input = "";
 	i = 0;

@@ -8,33 +8,33 @@ contacts::~contacts() {
 	
 }
 
-void contacts::setterFname(st Fame) {
-	Fname = Fame;
+void contacts::setterFname(std::string FirstName) {
+	Finame = FirstName;
 }
-void contacts::setterSname(st Same) {
-	Sname = Same;
+void contacts::setterSname(std::string SecondName) {
+	Sename = SecondName;
 }
-void contacts::setterNname(st Name) {
-	Nname = Name;
+void contacts::setterNname(std::string NickName) {
+	Niname = NickName;
 }
-void contacts::setterPnumber(st phone) {
-	Pnumber = phone;
+void contacts::setterPnumber(std::string NumberPhone) {
+	Phnumber = NumberPhone;
 }
-void contacts::setterDsecret(st secret) {
-	Dsecret = secret;
+void contacts::setterDsecret(std::string DarkSecret) {
+	Dasecret = DarkSecret;
 }
-st contacts::getterFname() {
-	return (Fname);
+std::string contacts::getterFname() {
+	return (Finame);
 }
-st contacts::getterSname() {
-	return (Sname);
+std::string contacts::getterSname() {
+	return (Sename);
 }
-st contacts::getterNname() {
-	return (Nname);
+std::string contacts::getterNname() {
+	return (Niname);
 }
-st contacts::getterPnumber() {
-	return (Pnumber);
+std::string contacts::getterPnumber() {
+	return (Phnumber);
 }
-st contacts::getterDsecret() {
-	return (Dsecret);
+std::string contacts::getterDsecret() {
+	return (Dasecret);
 }

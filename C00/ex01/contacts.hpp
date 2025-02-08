@@ -3,28 +3,27 @@
 
 #include <iostream>
 #include <string>
-#define st std::string
 
 class contacts {
 	private :
-		st Fname;
-		st Sname;
-		st Nname;
-		st Pnumber;
-		st Dsecret;
+		std::string Finame;
+		std::string Sename;
+		std::string Niname;
+		std::string Phnumber;
+		std::string Dasecret;
 	public :
 		contacts();
-		st getterFname();
-		st getterSname();
-		st getterNname();
-		st getterPnumber();
-		st getterDsecret();
+		std::string getterFname();
+		std::string getterSname();
+		std::string getterNname();
+		std::string getterPnumber();
+		std::string getterDsecret();
 
-		void setterFname(st Fame);
-		void setterSname(st Same);
-		void setterNname(st Name);
-		void setterPnumber(st phone);
-		void setterDsecret(st secret);
+		void setterFname(std::string Fame);
+		void setterSname(std::string Same);
+		void setterNname(std::string Name);
+		void setterPnumber(std::string phone);
+		void setterDsecret(std::string secret);
 	~contacts();
 };
 

@@ -5,7 +5,7 @@
 #include <iomanip>
 #include "contacts.hpp"
 #include <string>
-#define st std::string
+// #define st std::string
 
 #define RED    "\x1b[1;31m"
 #define CYAN    "\x1b[1;36m"
@@ -21,11 +21,11 @@ class phonebook {
 	public : 
 		phonebook();
 		contacts	getter_contact(int i);
-		void		contact_setf(st fn, int i);
-		void		contact_setl(st ln, int i);
-		void		contact_setn(st nn, int i);
-		void		contact_setp(st pn, int i);
-		void		contact_setd(st ds, int i);
+		void		contact_setf(std::string fn, int i);
+		void		contact_setl(std::string ln, int i);
+		void		contact_setn(std::string nn, int i);
+		void		contact_setp(std::string pn, int i);
+		void		contact_setd(std::string ds, int i);
 	~phonebook();
 };
 

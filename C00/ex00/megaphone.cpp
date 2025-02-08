@@ -1,18 +1,30 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   megaphone.cpp                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: elel-bah <elel-bah@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/08 17:54:35 by elel-bah          #+#    #+#             */
+/*   Updated: 2025/02/08 17:59:33 by elel-bah         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <iostream>
 
-int main(int count, char **strings)
+int main(int arc, char **content)
 {
-	int		j;
+	int		y;
 
-	if (count == 1)
+	if (arc == 1)
 	{
 		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << "\n";
 		return (0);
 	}
-	for (int i = 1; strings[i]; i++)
+	for (int x = 1; content[x]; x++)
 	{
-		for (j = 0; strings[i][j]; j++)
-			std::cout << (char)toupper(strings[i][j]);
+		for (y = 0; content[x][y]; y++)
+			std::cout << (char)toupper(content[x][y]);
 	}
 	return (0);
 }
